@@ -43,7 +43,7 @@ check_thresholds <- function(data,
 
     cli::cli_par()
     cli::cli_alert_danger("Overlapping thresholds detected.")
-    cli::cli_alert_info("Check the following thresholds and consider changing method of caclulation:")
+    cli::cli_alert_info("Check the following thresholds and consider changing method of calculation:")
     cli::cli_end()
 
     print(alerts)
