@@ -3,10 +3,10 @@ Title: Tools for Calculating Activity Level Thresholds
 Version: 0.0.0.9000
 Authors@R: 
     person("Matthew", "Hoyle", , "matthew.hoyle@phs.scot", role = c("aut", "cre"))
-Description: This package was built to aid users in calculating and evaulating 
-  activty level thresholds for epidemiological surveillance data. It should be used 
-  alongside functions from the {mem} package and includes some useful functions for 
-  tidying up `memmodel` outputs.  
+Description: This package was built to aid users in calculating and evaluating 
+  activity level for epidemiological surveillance data. It should be used 
+  alongside functions from the {mem} package and includes some useful functions 
+  for tidying up `memmodel` outputs.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
