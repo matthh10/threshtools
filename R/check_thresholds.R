@@ -1,3 +1,30 @@
+#' Check for overlapping thresholds
+#'
+#' @param data A `data.frame` or `tbl` of thresholds with each pathogen/age
+#'  group assigned to a row and columns for low, medium, high, and very high
+#'  thresholds.
+#'
+#' @param low_col Name of column showing low threshold (unquoted)
+#' @param medium_col Name of column showing medium threshold (unquoted)
+#' @param high_col Name of column showing high threshold (unquoted)
+#' @param very_high_col Name of column showing very high threshold (unquoted)
+#'
+#' @return If overlapping thresholds detected then `tbl` is returned with
+#' flagged thresholds
+#' @export
+#'
+#' @examples
+#'
+#' x <- dplyr::tibble(
+#'   indicator = c("a", "b"),
+#'   low = c(0.5, 1.2),
+#'   medium = c(1.1, 0.8),
+#'   high = c(2.5, 3.1),
+#'   very_high = c(3.7, 4.2)
+#'   )
+#'
+#' check_thresholds(x)
+
 check_thresholds <- function(data,
                              low_col = low,
                              medium_col = medium,

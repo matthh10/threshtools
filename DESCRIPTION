@@ -1,11 +1,16 @@
 Package: threshtools
-Title: What the Package Does (One Line, Title Case)
+Title: Tools for Calculating Activity Level Thresholds
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Matthew", "Hoyle", , "matthew.hoyle@phs.scot", role = c("aut", "cre"))
+Description: This package was built to aid users in calculating and evaulating 
+  activty level thresholds for epidemiological surveillance data. It should be used 
+  alongside functions from the {mem} package and includes some useful functions for 
+  tidying up `memmodel` outputs.  
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: 
+    cli,
+    dplyr
