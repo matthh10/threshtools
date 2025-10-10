@@ -26,6 +26,14 @@ rows as weeks columns for rate and flu season
 should be duplicated to force acceptance by \code{mem::model()} (default = \code{TRUE})}
 
 \item{season_length}{Number of weeks in flu season (default = 33)}
+
+\item{year_col}{Column with year}
+
+\item{week_col}{Column with week}
+
+\item{season_col}{Column with flu season (see \link[threshtools]{find_flu_season})}
+
+\item{rate_col}{Column with rate}
 }
 \value{
 Transformed \code{tbl} with rows as weeks and each season as a column.
@@ -59,6 +67,5 @@ season_col = flu_season,
 rate_col = rate,
 season_length = 33
 )
-
 
 }

@@ -7,6 +7,10 @@
 #' @param duplicate Boolean operator which controls whether single seasons
 #'  should be duplicated to force acceptance by `mem::model()` (default = `TRUE`)
 #' @param season_length Number of weeks in flu season (default = 33)
+#' @param year_col Column with year
+#' @param week_col Column with week
+#' @param season_col Column with flu season (see \link[threshtools]{find_flu_season})
+#' @param rate_col Column with rate
 #'
 #' @return Transformed `tbl` with rows as weeks and each season as a column.
 #'  Week 53 is preserved if present as it is handled by `mem::model()` and
@@ -40,7 +44,7 @@
 #' season_length = 33
 #' )
 #'
-#'
+
 
 
 data_to_mem <- function(data, seasons, duplicate = TRUE, season_length = 33,

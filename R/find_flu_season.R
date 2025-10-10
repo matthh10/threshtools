@@ -1,6 +1,6 @@
-#' Find the flu season a date belongs to (Week 40 to Week 39 of next year)
+#' Find the flu season from date
 #'
-#' This function determines the flu season for a given date, where a flu season
+#' This function determines the flu season for a given date, where a default flu season
 #' runs from Week 40 of one year until Week 39 of the following year (inclusive).
 #' This means there is no "inter-season" period; every date falls into a season.
 #'
@@ -10,6 +10,8 @@
 #' @return A character string indicating the flu season in "YYYY/YYYY" format
 #'         (e.g., "2023/2024"), or a vector of such strings if a vector of dates is provided.
 #'         Returns NA_character_ if the input is not a valid date.
+#' @export
+#'
 #' @examples
 #' find_flu_season(as.Date("2023-11-15")) # Expected: "2023/2024"
 #' find_flu_season(as.Date("2024-03-01")) # Expected: "2023/2024"

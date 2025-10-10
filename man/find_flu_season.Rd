@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_flu_season.R
 \name{find_flu_season}
 \alias{find_flu_season}
-\title{Find the flu season a date belongs to (Week 40 to Week 39 of next year)}
+\title{Find the flu season from date}
 \usage{
 find_flu_season(date, start_week = 40)
 }
@@ -17,7 +17,7 @@ A character string indicating the flu season in "YYYY/YYYY" format
 Returns NA_character_ if the input is not a valid date.
 }
 \description{
-This function determines the flu season for a given date, where a flu season
+This function determines the flu season for a given date, where a default flu season
 runs from Week 40 of one year until Week 39 of the following year (inclusive).
 This means there is no "inter-season" period; every date falls into a season.
 }
