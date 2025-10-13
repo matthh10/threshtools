@@ -41,7 +41,7 @@ calculate_msd <- function(data, rate_col = rate, season_col = flu_season, decima
 
   sd_rate <- data |>
     dplyr::pull({{rate_col}}) |>
-    base::sd() |>
+    stats::sd() |>
     janitor::round_half_up(decimal_places)
 
   no_seasons <- data |>
