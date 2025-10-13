@@ -17,6 +17,8 @@ and a column for rates}
 
 \item{rate_col}{Column containing rates (default = rate)}
 
+\item{season_col}{Column containing flu season (see \link[threshtools]{find_flu_season})}
+
 \item{decimal_places}{Number of decimal places to round thresholds}
 }
 \value{
@@ -25,7 +27,7 @@ number of seasons included, low, medium, high and very high threshold
 }
 \description{
 Functions calculate activity level thresholds from aggregated weekly rates
-using the mean standard deviation (MSD) method \link[(Sinnathamby)]{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}
+using the mean standard deviation (MSD) method \url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}\link{(Sinnathamby et al. 2024)}
 }
 \examples{
 

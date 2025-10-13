@@ -1,13 +1,14 @@
 #' Calculate MSD thresholds
 #'
 #' Functions calculate activity level thresholds from aggregated weekly rates
-#' using the mean standard deviation (MSD) method \link[(Sinnathamby)]{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}
+#' using the mean standard deviation (MSD) method \url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}[(Sinnathamby et al. 2024)]
 #'
 #'
 #' @param data Aggregated weekly rates of class `tbl` or `data.frame` with weeks as rows
 #' and a column for rates
 #' @param decimal_places Number of decimal places to round thresholds
 #' @param rate_col Column containing rates (default = rate)
+#' @param season_col Column containing flu season (see \link[threshtools]{find_flu_season})
 #'
 #' @return `tbl` with columns for mean rate, standard deviation of rate,
 #'  number of seasons included, low, medium, high and very high threshold
