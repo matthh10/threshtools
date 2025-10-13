@@ -27,7 +27,8 @@ number of seasons included, low, medium, high and very high threshold
 }
 \description{
 Functions calculate activity level thresholds from aggregated weekly rates
-using the mean standard deviation (MSD) method \url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}\link{(Sinnathamby et al. 2024)}
+using the mean standard deviation (MSD) method (Sinnathamby et al. 2024)
+\url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}
 }
 \examples{
 

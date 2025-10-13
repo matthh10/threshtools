@@ -1,8 +1,8 @@
 #' Calculate MSD thresholds
 #'
 #' Functions calculate activity level thresholds from aggregated weekly rates
-#' using the mean standard deviation (MSD) method \url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}[(Sinnathamby et al. 2024)]
-#'
+#' using the mean standard deviation (MSD) method (Sinnathamby et al. 2024)
+#' \url{https://doi.org/10.2807/1560-7917.ES.2024.29.45.2400696}
 #'
 #' @param data Aggregated weekly rates of class `tbl` or `data.frame` with weeks as rows
 #' and a column for rates
@@ -36,12 +36,12 @@ calculate_msd <- function(data, rate_col = rate, season_col = flu_season, decima
 
   mean_rate <- data |>
     dplyr::pull({{rate_col}}) |>
-    mean() |>
+    base::mean() |>
     janitor::round_half_up(decimal_places)
 
   sd_rate <- data |>
     dplyr::pull({{rate_col}}) |>
-    sd() |>
+    base::sd() |>
     janitor::round_half_up(decimal_places)
 
   no_seasons <- data |>

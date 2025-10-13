@@ -52,5 +52,9 @@ x <- tibble::tribble(
 42,    2025,  "2025/2026",  4.2,
 )
 
-plot_ts(x)
+x |>
+dplyr::mutate(week_date = as.Date(grates::isoweek(year = year, week = week))) |>
+plot_ts() +
+ggplot2::facet_wrap(~flu_season, scales = "free") +
+theme_rshp(angle_x = TRUE)
 }
