@@ -2,7 +2,7 @@
 % Please edit documentation in R/data_to_mem.R
 \name{data_to_mem}
 \alias{data_to_mem}
-\title{Transform aggregated data table into format accepted by \code{mem::memmodel()}}
+\title{Transform data in mem format}
 \usage{
 data_to_mem(
   data,
@@ -42,6 +42,7 @@ NAs are supplied to seasons without week 53.
 }
 \description{
 Transform aggregated data table into format accepted by \code{mem::memmodel()}
+(see \link[mem]{memmodel})
 }
 \examples{
 

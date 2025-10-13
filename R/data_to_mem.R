@@ -1,4 +1,7 @@
+#' Transform data in mem format
+#'
 #' Transform aggregated data table into format accepted by `mem::memmodel()`
+#' (see \link[mem]{memmodel})
 #'
 #' @param data Aggregated weekly counts of class `data.table` or `tbl` of with
 #'  rows as weeks columns for rate and flu season

@@ -1,7 +1,9 @@
 
-#' Extracts memmodel outputs and transforms into tidy format
+#' Tidy `memmodel` outputs
 #'
-#' @param mem_model Output from `mem::memmodel`
+#' Extracts `mem::memmodel()` outputs and transforms into tidy format
+#'
+#' @param mem_model Output from `mem::memmodel()` (see \link[mem]{memmodel})
 #' @param decimal_places Number of decimal places thresholds should be rounded to
 #'
 #' @return `tbl` of low, medium, high and very high thresholds, with key stats on

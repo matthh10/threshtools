@@ -2,12 +2,12 @@
 % Please edit documentation in R/tidy_mem.R
 \name{tidy_mem}
 \alias{tidy_mem}
-\title{Extracts memmodel outputs and transforms into tidy format}
+\title{Tidy \code{memmodel} outputs}
 \usage{
 tidy_mem(mem_model, decimal_places = 2)
 }
 \arguments{
-\item{mem_model}{Output from \code{mem::memmodel}}
+\item{mem_model}{Output from \code{mem::memmodel()} (see \link[mem]{memmodel})}
 
 \item{decimal_places}{Number of decimal places thresholds should be rounded to}
 }
@@ -17,5 +17,5 @@ mean start week, mean length of epidemic, effective number of pre-epidemic
 values (\code{n_max}) and number of seasons included in the model (\code{n_seasons})
 }
 \description{
-Extracts memmodel outputs and transforms into tidy format
+Extracts \code{mem::memmodel()} outputs and transforms into tidy format
 }
