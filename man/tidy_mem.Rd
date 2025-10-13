@@ -4,12 +4,15 @@
 \alias{tidy_mem}
 \title{Tidy \code{memmodel} outputs}
 \usage{
-tidy_mem(mem_model, decimal_places = 2)
+tidy_mem(mem_model, decimal_places = 2, ecdc_format = FALSE)
 }
 \arguments{
 \item{mem_model}{Output from \code{mem::memmodel()} (see \link[mem]{memmodel})}
 
 \item{decimal_places}{Number of decimal places thresholds should be rounded to}
+
+\item{ecdc_format}{A boolean operator (default = \code{FALSE}). If \code{TRUE} uses
+format required for annual submission to ECDC which includes post-epidemic values.}
 }
 \value{
 \code{tbl} of low, medium, high and very high thresholds, with key stats on
