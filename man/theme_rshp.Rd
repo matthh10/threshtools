@@ -4,12 +4,14 @@
 \alias{theme_rshp}
 \title{Function to apply the PHS RSHP team's theme to a ggplot2 object}
 \usage{
-theme_rshp(..., base_size = 11)
+theme_rshp(..., base_size = 11, angle_x = FALSE)
 }
 \arguments{
 \item{...}{Extra ggplot2::theme() options}
 
 \item{base_size}{Base font size as numeric}
+
+\item{angle_x}{Boolean operator (default = FALSE) controls whether x axis text should be angled}
 }
 \value{
 ggplot object with RSHP theming

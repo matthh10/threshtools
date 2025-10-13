@@ -1,4 +1,7 @@
+#' Transform data in mem format
+#'
 #' Transform aggregated data table into format accepted by `mem::memmodel()`
+#' (see \link[mem]{memmodel})
 #'
 #' @param data Aggregated weekly counts of class `data.table` or `tbl` of with
 #'  rows as weeks columns for rate and flu season
@@ -32,8 +35,7 @@
 #' 41,    2025,  "2025/2026",  3.1,
 #' 42,    2025,  "2025/2026",  4.2,
 #' )
-
-
+#'
 #' data_to_mem(
 #' x,
 #' seasons = c("2023/2024", "2024/2025"),
