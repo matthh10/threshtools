@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_rshp.R
 \name{theme_rshp}
 \alias{theme_rshp}
-\title{Function to apply the PHS RSHP team's theme to a ggplot2 object}
+\title{Add PHS RSHP theme}
 \usage{
 theme_rshp(..., base_size = 11, angle_x = FALSE)
 }

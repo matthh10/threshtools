@@ -1,5 +1,7 @@
 
 
+#' Add PHS RSHP theme
+#'
 #' Function to apply the PHS RSHP team's theme to a ggplot2 object
 #'
 #' @param ... Extra ggplot2::theme() options
