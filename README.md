@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# threshtools
+# `{threshtools}`
 
 <!-- badges: start -->
 <!-- badges: end -->
