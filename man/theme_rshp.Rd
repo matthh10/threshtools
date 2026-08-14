@@ -14,7 +14,7 @@ theme_rshp(..., base_size = 11, angle_x = FALSE)
 \item{angle_x}{Boolean operator (default = FALSE) controls whether x axis text should be angled}
 }
 \value{
-ggplot object with RSHP theming
+ggplot object with RSHP themeing
 }
 \description{
 Function to apply the PHS RSHP team's theme to a ggplot2 object

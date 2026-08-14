@@ -9,7 +9,7 @@
 #' @param base_size Base font size as numeric
 #'
 #' @importFrom ggplot2 %+replace%
-#' @return ggplot object with RSHP theming
+#' @return ggplot object with RSHP themeing
 #' @export
 #'
 #' @examples

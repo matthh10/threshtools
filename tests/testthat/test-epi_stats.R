@@ -1,4 +1,3 @@
-
 x <- tibble::tribble(
   ~week, ~year, ~flu_season,  ~rate,
   40,    2023,  "2023/2024",  2.5,
@@ -12,13 +11,15 @@ x <- tibble::tribble(
   42,    2025,  "2025/2026",  4.2,
 )
 
-fun_test <- x |>
-  dplyr::mutate(week_date = as.Date(grates::isoweek(year = year, week = week))) |>
-  plot_ts() +
-  theme_rshp(angle_x = TRUE)
 
-test_that("multiplication works", {
-  expect_true(
-    ggplot2::is_ggplot(fun_test)
-  )
+fun_test <- epi_stats(
+  x,
+  season = "2024/2025",
+  epidemic_threshold = 2.9,
+  week_col = week
+)
+
+
+test_that("epi_stats() works", {
+  expect_equal(fun_test[[1]], 41)
 })
